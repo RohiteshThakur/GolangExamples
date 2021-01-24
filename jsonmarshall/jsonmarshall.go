@@ -26,7 +26,7 @@ func (b Book) ToJSON() []byte {									// No need to pass object as method is a
 func main() {
 	b := []Book{
 		Book{Title: "Python", Author: "Ro", Pages:500},
-		Book{Title: "Golang", Author: "RoT", Pages: 400},			// Notice the ","
+		Book{Title: "Golang", Author: "RoT", Pages: 400},			// Notice the "," in the end. This is not JSON but a struct.
 	}
 	//b := Book{Title: "Python", Author: "Ro", Pages:500}
 	// result := reflect.TypeOf(b)    -> []uint8  (Because its a Byte array of integers)
